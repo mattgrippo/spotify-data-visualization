@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="animate-flicker">
+    <div class="key">
+      <h1 style="margin-bottom: 0px;">Top Spotify Songs by Year</h1>
+      <div class="buttons">
+        <button id="yearback" style="color: black;">
+          <i id="left-arrow" class="fa fa-arrow-left"></i>
+        </button>
+        <span id="year"></span>
+        <button id="yearforward" style="color: black;">
+          <i id="right-arrow" class="fa fa-arrow-right"></i>
+        </button>
+        <br /><br />
+        <div class="desc">
+          Displayed are the top Spotify songs by year from 2010 to 2019 compared
+          across beats per minute (BPM) and danceability. This data comes from
+          Spotify's algorithms and determines how to serve music organically to
+          the user. The colors represent the genres of each song.
+          <br />
+          <div class="tips">
+            <hr />
+            Click a circle to filter by genre!<br />
+          </div>
+        </div>
+        <button id="seeMore">See more</button>
+      </div>
+    </div>
+    <div id="chart"></div>
+    <script src="final-script.js"></script>
+  </body>
+</html>

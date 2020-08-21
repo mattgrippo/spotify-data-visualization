@@ -1,0 +1,161 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+}
+
+body {
+    background: black;
+    overflow: hidden;
+}
+
+.axisLabel {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.axis {
+    font-size: 12pt;
+}
+
+.key {
+    position: absolute;
+    text-align: right;
+    right: 25px;
+    width: 35%;
+}
+
+.year {
+    position: relative;
+    width: 100%;
+}
+
+.buttons {
+    padding: 10px;
+    padding-right: 0px;
+}
+
+button {
+    border-radius: 5px;
+    background: none;
+    border: none;
+}
+
+.tooltip {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #000000;
+    padding: 10px;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    border-radius: 3px;
+}
+
+.artist-name {
+    font-weight: 600;
+    color: inherit;
+}
+
+#genre-name {
+    font-weight: 600;
+    font-size: 9pt;
+    color: inherit;
+    width: max-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.fa:hover {
+    color: #1DB954;
+}
+
+.desc {
+    font-size: 14px;
+    z-index: -1;
+    height: min-content;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.desc.active {
+    height: max-content;
+    max-height: 500px;
+    transition: all 1s;
+}
+
+.tips {
+    padding: 10px;
+    border-radius: 10px;
+    width: max-content;
+    float: right;
+}
+
+h6 {
+    color: inherit;
+    font-size: 16px;
+    margin: unset;
+}
+
+#seeMore {
+    background-color: white;
+    color: black;
+}
+
+#seeMore:hover {
+    background-color: #1DB954;
+}
+
+/* Page Fade in Code */
+@keyframes flickerAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes flickerAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes flickerAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes flickerAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-flicker {
+    -webkit-animation: flickerAnimation 2s;
+    -moz-animation: flickerAnimation 2s;
+    -o-animation: flickerAnimation 2s;
+    animation: flickerAnimation 2s;
+}
